@@ -29,20 +29,22 @@ Read the first two before you use this. It's a half-hour total and you'll get mo
 
 That's it.
 
-## Why these files exist (the actual reason)
+## Why these files exist
 
-You're allowed to be lazy. You're allowed to forget what folder a thing is in, what command runs the tests, what you decided three days ago. Cognitive debt is yours to manage — if you want to not know, that's your call.
+Think of them as the project's **brain** — an external memory the project carries so you don't have to.
 
-The point of these files isn't to *force you* to be more disciplined. The point is to **give Claude enough context to catch you when you ask for something dumb**. Delete the wrong file? Claude should notice it's referenced elsewhere. About to commit data that's gitignored for a reason? Claude should stop you. Push to a branch you said was sacred? Claude should ask.
+You shouldn't have to remember which folder things live in, what command runs the tests, what you decided three days ago, or what conventions you set last week. The system remembers it for you. When something happens that you don't remember — a quirk of the deploy, a decision about which library to use, the reason a file is structured a certain way — the project brain has it written down. Claude reads the brain at the start of every session, so the project's memory comes back online before you do.
 
-That only works if Claude knows what's true about your project. The files give it that picture. The "Things I want you to catch me on" section in `CLAUDE.md` is the most important part — it's where you arm Claude to be your safety net.
+This is the basic version. `CLAUDE.md` is the persistent context (who, what, how). `STATE.md` is the working memory (where you are right now). `settings.json` is the muscle memory (what's safe to do without asking). Together they replace "I should remember to..." with "the system already knows."
+
+The bigger version of the same idea — architecture decision records, session docs, runbooks, root cause analyses — is in [AI-Native Engineering](https://workiscode.com/articles/ai-native-engineering). Add those when the pain of not having them shows up. Until then, this is enough.
 
 ## Things to know
 
-- **Permission prompts are training wheels.** Start with the defaults in `settings.json`. As you find yourself approving the same command over and over, add it to your personal allowlist (in `.claude/settings.local.json`, not `settings.json` — keep your personal stuff out of the shared file). Don't blanket-allow `Bash(*)` — that removes the safety net you set up.
+- **Permission prompts are training wheels.** Start with the defaults in `settings.json`. As you find yourself approving the same command over and over, add it to your personal allowlist (in `.claude/settings.local.json`, not `settings.json` — keep your personal stuff out of the shared file). Don't blanket-allow `Bash(*)` — the prompts are how the project keeps track of what it's actually OK with.
 - **`settings.json` vs `settings.local.json`.** `settings.json` is shared (committed to git, applies to anyone who clones your repo). `settings.local.json` is personal (gitignored, just for you). Add personal command allows there.
-- **STATE.md is for Claude.** Not for you. Claude writes it at session end with your approval, reads it at session start, and is back in context fast. The point isn't your typing — it's that next-session Claude knows where you actually are.
-- **You don't need ADRs, sessions, runbooks, or story points to start.** Add discipline when the pain of not having it shows up. Not before.
+- **STATE.md is the project's working memory.** Claude proposes the update at session end, you approve. Next session, Claude reads it first and is back in context before you finish your coffee.
+- **You don't need ADRs, sessions, runbooks, or story points to start.** Add discipline through code when the pain of not having it shows up. Not before.
 
 ## When you outgrow this
 

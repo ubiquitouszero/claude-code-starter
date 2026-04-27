@@ -30,7 +30,7 @@ Personal website. Static HTML/CSS/JS. Deployed to Netlify when I drag the folder
 
 ## Things I want you to catch me on
 
-This is the section that matters most. I'm allowed to be lazy because you're paying attention.
+The rules I want enforced even when I forget. Better to write them down here than to keep them in my head.
 
 - If I'm about to break the site (typo in HTML that breaks layout, missing closing tag), warn me before saving.
 - If I'm about to commit a giant image (>2MB), tell me to compress it first.

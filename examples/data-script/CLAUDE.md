@@ -33,7 +33,7 @@ A folder of small Python scripts I use to wrangle data for taxes and bookkeeping
 
 ## Things I want you to catch me on
 
-This is the section that matters most. I'm allowed to be lazy because you're paying attention.
+The rules I want enforced even when I forget. Better to write them down here than to keep them in my head.
 
 - If I'm about to write a script that reads from `data/` and writes to `data/`, stop me. Output goes to `output/`.
 - If I'm about to commit anything from `data/` or `output/`, stop me. Real data should never end up in git. The `.gitignore` should prevent this but check anyway.

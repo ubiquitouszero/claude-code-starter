@@ -36,7 +36,7 @@
 
 ## Things I want you to catch me on
 
-[This is the section that makes Claude useful as a safety net. List the dumb things you might do, so Claude can stop you. Add to it whenever you correct Claude on the same thing twice — that's a sign you needed a guardrail.]
+[Project rules you want consistently enforced even when you forget. Better to write them down once than to remember them every session. Add to this whenever you correct Claude on the same thing twice — that's the project brain telling you it needed that rule written down.]
 
 - Don't push to `main` directly. Always open a PR.
 - Don't commit secrets. Check `.env.example` for what should be in `.env`.

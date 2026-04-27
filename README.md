@@ -23,11 +23,10 @@ Read the first two before you use this. It's a half-hour total and you'll get mo
 ## How to use it
 
 1. Click **"Use this template"** at the top of the GitHub page to make your own copy. (Or `git clone` and `rm -rf .git` if you prefer.)
-2. Open `CLAUDE.md` and replace the `[BRACKETED]` placeholders. Look at `examples/` for what filled-in versions look like. Five minutes here saves hours later.
-3. Open `STATE.md` and write one or two lines about what you're working on. (Or skip it — Claude will offer to write the first one for you.)
-4. Run `claude` in the repo. It'll pick up `CLAUDE.md` automatically.
+2. Run `claude` in the new repo and say **"help me set this up."** Claude will read the templates, see the brackets, and walk you through filling them in one section at a time — proposing each update for your approval before writing. No find-and-replace, no fighting with markdown.
+3. That's it. Claude has the project brain populated and is ready to work.
 
-That's it.
+If you'd rather fill the templates in by hand, look at the [`examples/`](examples/) folder for what filled-in versions look like. The walked-through path is faster.
 
 ## Why these files exist
 

@@ -2,6 +2,8 @@
 
 **Last updated:** [YYYY-MM-DD]
 
+> **Claude, first-run instructions:** If you're reading this and the `[BRACKETS]` are still here, ask the user what they're working on right now and propose the first `STATE.md` update for their approval. Keep it short — three or four bullets at most. Going forward, you'll propose updates to this file at the end of each session.
+
 ## What I'm working on
 
 [One or two sentences. The current feature, bug, or chunk of work.]

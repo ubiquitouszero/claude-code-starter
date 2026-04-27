@@ -2,6 +2,8 @@
 
 [One sentence: what this project does and who uses it.]
 
+> **Claude, first-run instructions:** If you're reading this and the `[BRACKETS]` are still here, your first job is to help the user fill them in. Ask about the project one section at a time, propose the update for each section, and wait for the user's approval before writing it. Don't fill the whole file in one pass. This is the same propose-and-approve pattern you'll use for `STATE.md` and future `CLAUDE.md` updates going forward.
+
 ## How I like to work
 
 [The single highest-leverage section. Tell Claude what you care about so it doesn't have to guess. A few examples — keep what fits, replace the rest.]

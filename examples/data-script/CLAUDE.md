@@ -1,6 +1,6 @@
 # Bookkeeping Scripts
 
-A folder of small Python scripts I use to wrangle data for taxes and bookkeeping. Each script does one thing — pull a CSV, parse it, output something cleaner.
+A folder of small Python scripts I use to wrangle data for taxes and bookkeeping. Each script does one thing: pull a CSV, parse it, output something cleaner.
 
 ## How I like to work
 
@@ -13,23 +13,23 @@ A folder of small Python scripts I use to wrangle data for taxes and bookkeeping
 
 - Python 3.12.
 - `pandas` for the heavier scripts, plain stdlib (`csv`, `json`, `pathlib`) for the simple ones.
-- No virtual env yet — I install with `pip install --user`. The venv setup confused me.
+- No virtual env yet. I install with `pip install --user`. The venv setup confused me.
 - Scripts run from the command line: `python scripts/whatever.py`.
 
 ## Project conventions
 
 - One file per script. Filename describes what it does (`split_quarterly_invoices.py`, not `processor.py`).
 - Output goes to `output/` (gitignored).
-- Input data goes to `data/` (gitignored — has personal stuff).
-- `data/sample.csv` is the one exception — fake data for testing, NOT gitignored.
+- Input data goes to `data/` (gitignored, has personal stuff).
+- `data/sample.csv` is the one exception. Fake data for testing, NOT gitignored.
 - Commits in plain English.
 
 ## Key paths
 
-- `scripts/` — the actual Python scripts
-- `data/` — input CSVs (gitignored)
-- `output/` — generated files (gitignored)
-- `data/sample.csv` — fake data for testing
+- `scripts/`: the actual Python scripts
+- `data/`: input CSVs (gitignored)
+- `output/`: generated files (gitignored)
+- `data/sample.csv`: fake data for testing
 
 ## Things I want you to catch me on
 
@@ -38,7 +38,7 @@ The rules I want enforced even when I forget. Better to write them down here tha
 - If I'm about to write a script that reads from `data/` and writes to `data/`, stop me. Output goes to `output/`.
 - If I'm about to commit anything from `data/` or `output/`, stop me. Real data should never end up in git. The `.gitignore` should prevent this but check anyway.
 - If a script needs a new pip package, tell me what it does and what other packages it pulls in before installing.
-- Don't trust my numbers — if I say "this should give me 12 rows" and you get 11, tell me, don't quietly continue.
+- Don't trust my numbers. If I say "this should give me 12 rows" and you get 11, tell me, don't quietly continue.
 - If I ask you to delete a script, check whether any other script imports from it first.
 
 ## Session start

@@ -1,11 +1,11 @@
 # My Site
 
-Personal website. Static HTML/CSS/JS. Deployed to Netlify when I drag the folder into the Netlify dashboard (yes, manually — I'll automate it eventually).
+Personal website. Static HTML/CSS/JS. Deployed to Netlify by dragging the folder into the Netlify dashboard. Yes, manually. I'll automate it eventually.
 
 ## How I like to work
 
 - I'm not a developer. Explain things plainly. Skip jargon when you can, or define it the first time.
-- Show me what changed before saving — diff > prose description.
+- Show me what changed before saving. Diff > prose description.
 - If you're going to install something, ask first. I don't know what npm packages do.
 - Don't refactor what I didn't ask you to refactor. "While I'm here let me also clean up..." has burned me.
 
@@ -22,11 +22,11 @@ Personal website. Static HTML/CSS/JS. Deployed to Netlify when I drag the folder
 
 ## Key paths
 
-- `index.html` — homepage
-- `about.html` — about me
-- `blog/` — blog posts (one HTML file per post)
-- `style.css` — site-wide styles
-- `images/` — photos
+- `index.html`: homepage
+- `about.html`: about me
+- `blog/`: blog posts (one HTML file per post)
+- `style.css`: site-wide styles
+- `images/`: photos
 
 ## Things I want you to catch me on
 

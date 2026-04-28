@@ -6,7 +6,7 @@
 
 ## How I like to work
 
-[The single highest-leverage section. Tell Claude what you care about so it doesn't have to guess. A few examples — keep what fits, replace the rest.]
+[The single highest-leverage section. Tell Claude what you care about so it doesn't have to guess. A few examples below; keep what fits, replace the rest.]
 
 - Direct answers, no preamble. Skip the "Great question!" stuff.
 - Show me the diff before applying big changes.
